@@ -1,0 +1,142 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top center, #222831, #121416);
+  color: #f1f1f1;
+  padding-top: 80px;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/*
+.contact-box {
+  background-color: #1e1e1e;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
+}
+
+.contact-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.8);
+}
+*/
+
+.contact-box {
+  background-color: #1e1e1e;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3); /* bayangan biru */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(13, 110, 253, 0.5); /* bayangan biru saat hover */
+}
+.navbar {
+  backdrop-filter: blur(12px);
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.navbar-logo {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+  filter: drop-shadow(0 0 3px #0d6efd80);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #e0e0e0;
+  transition: color 0.3s ease;
+  line-height: 1;
+}
+
+.navbar-brand:hover {
+  color: #0d6efd;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 600;
+  color: #d0d0d0;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #0d6efd;
+  text-shadow: 0 0 5px #0d6efd88;
+}
+
+h2 {
+  font-weight: 700;
+  color: #f1f1f1;
+  margin-bottom: 30px;
+  text-align: center;
+  text-shadow: 1px 1px 6px #00000099;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #cccccc;
+  text-shadow: 0 1px 3px #00000088;
+}
+
+.theme-switch {
+  width: 60px;
+  height: 30px;
+  background: #ddd;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+.theme-switch .icon {
+  font-size: 16px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.toggle-circle {
+  width: 26px;
+  height: 26px;
+  background: #666;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.theme-switch.dark {
+  background: #333;
+}
+
+.theme-switch.dark .toggle-circle {
+  transform: translateX(30px);
+}
