@@ -12,7 +12,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   
   <!--css custom -->
-    <link id="theme-style" href="jurusanv2.css" rel="stylesheet" />
+    <link id="theme-style" href="./assets/css/jurusan.css" rel="stylesheet" />
     
     <!-- poppins fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -185,11 +185,11 @@
 
   function setTheme(theme) {
     if (theme === "dark") {
-      themeLink.href = "jurusan-darkv2.css";
+      themeLink.href = "./assets/css/jurusan-dark.css";
       localStorage.setItem("theme", "dark");
       themeSwitch.classList.add("dark");
     } else {
-      themeLink.href = "jurusanv2.css";
+      themeLink.href = "./assets/css/jurusan.css";
       localStorage.setItem("theme", "light");
       themeSwitch.classList.remove("dark");
     }
