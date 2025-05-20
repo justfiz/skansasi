@@ -148,7 +148,7 @@ footer {
 .toggle-circle {
   width: 26px;
   height: 26px;
-  background: white;
+  background: #666;
   border-radius: 50%;
   position: absolute;
   top: 2px;
