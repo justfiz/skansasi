@@ -13,7 +13,7 @@
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   
 <!-- css custom -->
-<link id="theme-style" href="kontakv2.css" rel="stylesheet" />
+<link id="theme-style" href="./assets/css/kontak.css" rel="stylesheet" />
   
 </head>
 <body>
@@ -93,11 +93,11 @@
 
   function setTheme(theme) {
     if (theme === "dark") {
-      themeLink.href = "kontak-darkv2.css";
+      themeLink.href = "./assets/css/kontak-dark.css";
       localStorage.setItem("theme", "dark");
       themeSwitch.classList.add("dark");
     } else {
-      themeLink.href = "kontakv2.css";
+      themeLink.href = "./assets/css/kontak.css";
       localStorage.setItem("theme", "light");
       themeSwitch.classList.remove("dark");
     }
