@@ -1,0 +1,166 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top center, #1a1d23, #0f1013);
+  color: #f1f1f1;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 80px;
+}
+
+main {
+  flex: 1;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.section-title::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #0d6efd;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 2px;
+  box-shadow: 0 0 8px #0d6efd88;
+}
+
+/* Card Style */
+.card {
+  background-color: #1f2228;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(13, 110, 253, 0.3);
+}
+
+.card-img-top {
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 0 4px #0d6efd33);
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.08);
+}
+
+.card-title {
+  font-weight: 600;
+  color: #0d6efd;
+  font-size: 1.2rem;
+}
+
+.card-text {
+  color: #cccccc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  backdrop-filter: blur(12px);
+  background-color: rgba(0, 0, 0, 0.75) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-logo {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+  filter: drop-shadow(0 0 3px #0d6efd80);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.3rem;
+  color: #e0e0e0;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #0d6efd;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 600;
+  color: #d0d0d0;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #0d6efd;
+  text-shadow: 0 0 5px #0d6efd88;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 22px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #999999;
+  box-shadow: 0 -5px 12px rgba(0, 0, 0, 0.5);
+}
+
+.theme-switch {
+  width: 60px;
+  height: 30px;
+  background: #ddd;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+.theme-switch .icon {
+  font-size: 16px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.toggle-circle {
+  width: 26px;
+  height: 26px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.theme-switch.dark {
+  background: #333;
+}
+
+.theme-switch.dark .toggle-circle {
+  transform: translateX(30px);
+}
